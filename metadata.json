@@ -1,0 +1,8 @@
+{
+  "name": "Smile Castle Dental Clinic",
+  "description": "Professional, premium dental care in South Delhi by Dr. Trishu Chowdhery and Dr. Arun Kumar. Specialized in painless dentistry, implants, and smile correction.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}

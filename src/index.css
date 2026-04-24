@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary: #1E3A8A; /* Deep Professional Blue */
+  --color-accent: #E11D48;  /* Vibrant Medical Red */
+  --color-secondary: #DB2777; /* Warm Pinkish */
+  --color-action: #FACC15;  /* Bright Yellow */
+  --color-warm-bg: #FDFCFB; 
+  --color-surface-2: #F3F4F6;
+}
+
+@layer base {
+  body {
+    @apply bg-warm-bg text-primary font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+.premium-card {
+  @apply bg-white border border-black/5 rounded-[32px] transition-all duration-500 hover:shadow-[0_20px_50px_rgba(30,58,138,0.1)] hover:-translate-y-2;
+}
+
+.action-gradient {
+  background: linear-gradient(135deg, var(--color-action) 0%, #FBBF24 100%);
+}
+
+.medical-gradient {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
